@@ -26,7 +26,6 @@ export default function App() {
       ...feedbackType,
       [currentFeedback]: feedbackType[currentFeedback] + 1,
     });
-    console.log(feedbackType);
   };
   const totalFeedback =
     feedbackType.good + feedbackType.neutral + feedbackType.bad;
