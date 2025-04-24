@@ -1,19 +1,19 @@
-// import { useState } from "react";
+import css from "./Options.module.css";
 
 export default function Options({ onUpdate, visibleReset, onReset }) {
   return (
-    <div className="options">
-      <button className="option" onClick={() => onUpdate("good")}>
+    <div className={css.options}>
+      <button className={css.option} onClick={() => onUpdate("good")}>
         Good
       </button>
-      <button className="option" onClick={() => onUpdate("neutral")}>
+      <button className={css.option} onClick={() => onUpdate("neutral")}>
         Neutral
       </button>
-      <button className="option" onClick={() => onUpdate("bad")}>
+      <button className={css.option} onClick={() => onUpdate("bad")}>
         Bad
       </button>
       {visibleReset && (
-        <button className="option" onClick={onReset}>
+        <button className={css.reset} onClick={onReset}>
           Reset
         </button>
       )}
